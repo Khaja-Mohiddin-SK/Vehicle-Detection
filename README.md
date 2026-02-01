@@ -38,6 +38,7 @@ This project demonstrates end-to-end full-stack development including authentica
 
 # How to run 
 Open an integarted for the main folder Vehicle Detection and run: **npm run dev**
+
 Here it run the frontend(user) and Backend(server) both.
 
 ---
