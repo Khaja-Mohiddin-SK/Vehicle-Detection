@@ -8,18 +8,18 @@ This project demonstrates end-to-end full-stack development including authentica
 
 # Key Features
 
-✅ User Registration & Login
-✅ JWT Authentication (HTTP-only cookies)
-✅ Email OTP Verification (Nodemailer)
-✅ Password Reset via OTP
-✅ Vehicle Registration per User
-✅ Number Plate Lookup API
-✅ Vehicle Tracking Simulation  
-✅ Real-time Speed Simulation
-✅ Interactive Map Tracking (Leaflet)
-✅ Protected Routes with Middleware
-✅ MongoDB Schema Relationships
-✅ Spline 3D
+✅ User Registration & Login  
+✅ JWT Authentication (HTTP-only cookies)  
+✅ Email OTP Verification (Nodemailer)  
+✅ Password Reset via OTP  
+✅ Vehicle Registration per User  
+✅ Number Plate Lookup API  
+✅ Vehicle Tracking Simulation 
+✅ Real-time Speed Simulation  
+✅ Interactive Map Tracking (Leaflet)  
+✅ Protected Routes with Middleware  
+✅ MongoDB Schema Relationships  
+✅ Spline 3D  
 
 ---
 
