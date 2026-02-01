@@ -65,6 +65,8 @@ SHOWS TRACKING WITH RANDOM LOCATONS, PATH AND SPEED.
 ↓
 
 LOGOUT → HOVER AT THE LETTER ICON ON TOP RIGHT ICON ( THE LETTER ICON IS YOUR FIRST LETTER FROM YOUR NAME WHICH YOU ENTER )
+
                                                           ↓
+                                                          
                                                       CLICK LOGOUT
 
