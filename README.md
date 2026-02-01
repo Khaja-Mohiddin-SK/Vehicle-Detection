@@ -13,7 +13,7 @@ This project demonstrates end-to-end full-stack development including authentica
 ✅ Email OTP Verification (Nodemailer)  
 ✅ Password Reset via OTP  
 ✅ Vehicle Registration per User  
-✅ Number Plate Lookup API  
+✅ Number Plate Lookup API 
 ✅ Vehicle Tracking Simulation  
 ✅ Real-time Speed Simulation 
 ✅ Interactive Map Tracking (Leaflet)  
