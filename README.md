@@ -14,7 +14,7 @@ This project demonstrates end-to-end full-stack development including authentica
 ✅ Password Reset via OTP  
 ✅ Vehicle Registration per User  
 ✅ Number Plate Lookup API  
-✅ Vehicle Tracking Simulation 
+✅ Vehicle Tracking Simulation  
 ✅ Real-time Speed Simulation  
 ✅ Interactive Map Tracking (Leaflet)  
 ✅ Protected Routes with Middleware  
