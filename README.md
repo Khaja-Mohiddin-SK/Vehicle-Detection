@@ -44,7 +44,7 @@ Here it runs the frontend(user) and Backend(server) both.
 ---
 # THE Flow : 
 
-HOME PAGE ( VDS LOGO WILL NAVIAGTE TO HOME PAGE IN ANY PAGE )
+HOME PAGE ( CLICK VDS LOGO TO NAVIAGTE HOME PAGE FROM ANY PAGE )
 
 ↓
 
