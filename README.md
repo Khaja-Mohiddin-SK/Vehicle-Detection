@@ -9,7 +9,7 @@ This project demonstrates end-to-end full-stack development including authentica
 # Key Features
 
 ✅ User Registration & Login  
-✅ JWT Authentication (HTTP-only cookies)  
+✅ JWT Authentication (HTTP-only cookies)
 ✅ Email OTP Verification (Nodemailer)  
 ✅ Password Reset via OTP  
 ✅ Vehicle Registration per User  
