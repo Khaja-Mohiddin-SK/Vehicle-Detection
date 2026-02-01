@@ -15,7 +15,7 @@ This project demonstrates end-to-end full-stack development including authentica
 ✅ Vehicle Registration per User  
 ✅ Number Plate Lookup API  
 ✅ Vehicle Tracking Simulation  
-✅ Real-time Speed Simulation  
+✅ Real-time Speed Simulation 
 ✅ Interactive Map Tracking (Leaflet)  
 ✅ Protected Routes with Middleware  
 ✅ MongoDB Schema Relationships  
