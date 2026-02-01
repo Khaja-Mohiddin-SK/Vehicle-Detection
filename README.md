@@ -45,15 +45,25 @@ Here it runs the frontend(user) and Backend(server) both.
 # THE Flow : 
 
 REGISTER → EMAIL OTP → VERIFY ACCOUNT
+
 ↓
+
 LOGIN → FORGOT PASSWORD → ENTER EMAIL → ENTER OTP → RESET PASSWORD → LOGIN AGAIN
+
 ↓
+
 REGISTER VEHICLE DETAILS
+
 ↓
+
 TRACK VEHICLE
+
 ↓
+
 SHOWS TRACKING WITH RANDOM LOCATONS, PATH AND SPEED.
+
 ↓
+
 LOGOUT → HOVER AT THE LETTER ICON ON TOP RIGHT ICON ( THE LETTER ICON IS YOUR FIRST LETTER FROM YOUR NAME WHICH YOU ENTER )
                                                           ↓
                                                       CLICK LOGOUT
