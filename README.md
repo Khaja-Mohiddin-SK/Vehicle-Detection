@@ -18,7 +18,7 @@ This project demonstrates end-to-end full-stack development including authentica
 ✅ Real-time Speed Simulation
 ✅ Interactive Map Tracking (Leaflet)  
 ✅ Protected Routes with Middleware  
-✅ MongoDB Schema Relationships  
+✅ MongoDB Schema Relationships 
 ✅ Spline 3D  
 
 
