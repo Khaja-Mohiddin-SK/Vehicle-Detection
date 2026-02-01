@@ -19,6 +19,8 @@ This project demonstrates end-to-end full-stack development including authentica
 ✅ Interactive Map Tracking (Leaflet)  
 ✅ Protected Routes with Middleware  
 ✅ MongoDB Schema Relationships  
+✅ Spline 3D  
+
 
 ---
 
@@ -37,7 +39,7 @@ This project demonstrates end-to-end full-stack development including authentica
 ---
 
 # How to run 
-Open an integarted for the main folder Vehicle Detection and run: **npm run dev**
+Open an integarted terminal for the main folder Vehicle Detection and run: **npm run dev**
 
 Here it runs the frontend(user) and Backend(server) both.
 
@@ -69,4 +71,14 @@ SHOWS TRACKING WITH RANDOM LOCATONS, PATH AND SPEED.
 ↓
 
 LOGOUT  →  GO TO HOME  →  PAGE HOVER AT THE LETTER ICON ON TOP RIGHT ICON ( THE LETTER ICON IS YOUR FIRST LETTER FROM YOUR NAME WHICH YOU ENTER )  →  CLICK LOGOUT
+
+---
+
+# Tracking Module
+
+- Leaflet map rendering
+- Dynamic polyline path updates
+- Simulated GPS movement
+- Real-time speed generation
+- Marker updates per interval
 
