@@ -42,7 +42,7 @@ Open an integarted terminal for the main folder Vehicle Detection and run: (npm 
 
 Here it runs the frontend(user) and Backend(server) both.
 
- Note:  If you face an error of npm check the note.
+ Note:   If you face an error of npm, check the note.
        
        -> Install Node.js (if not already installed).
 
