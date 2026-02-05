@@ -43,10 +43,15 @@ Open an integarted terminal for the main folder Vehicle Detection and run: (npm 
 Here it runs the frontend(user) and Backend(server) both.
 
 Note:  -> Install Node.js (if not already installed).
-       -> Now run npm run dev in the termainal of main folder(Vehicle Detection).
+
+       -> Now run npm run dev in the termainal of main folder (Vehicle Detection).
+       
        -> if you face an error of npm then check for node modules in each directory( main, frontend, backend folders) are installed or not.
+       
        -> if not installed in termianl go to the directory in which node modules are not installed and type (npm install) in the terminal.
+       
        -> Now after installing the node modules you can go to the main directory((Vehicle Detection) and type (npm run dev) in the terminal.
+       
 
 ---
 # THE Flow : 
