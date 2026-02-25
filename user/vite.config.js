@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-  base: process.env.VITE_BASE_PATH || "/Vehicle-Detection",
+  base: process.env.VITE_BASE_PATH ||  "/",
   server:{
     port: 5173,
     strictPort: true
