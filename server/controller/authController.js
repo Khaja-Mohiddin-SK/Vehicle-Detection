@@ -6,6 +6,16 @@ import transporter from '../config/nodemailer.js';
 
 const passwordreq = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 const emailreq = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+const isProduction = process.env.NODE_ENV === 'production';
+
+const cookieOptions = {
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: isProduction ? 'none' : 'lax',
+    maxAge: 7 * 24 * 60 * 60 * 1000,
+};
+
 export const register = async (req,res)=>{
 
     const {name, email, password} = req.body;
@@ -32,12 +42,7 @@ export const register = async (req,res)=>{
 
         const token = jwt.sign({id:user._id}, process.env.JWT_SECRET, {expiresIn:'7d'});
 
-        res.cookie('token', token, {
-            httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            samesite: process.env.NODE_ENV === 'production'?
-            'none' : 'strict',
-            maxAge: 7 * 24 * 60 * 60 * 1000,   });
+        res.cookie('token', token, cookieOptions);
 
 
        // sending mail
@@ -78,14 +83,7 @@ export const login = async (req, res) => {
         }
         const token = jwt.sign({id:user._id}, process.env.JWT_SECRET, {expiresIn:'7d'});
 
-        res.cookie('token', token, {
-            httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            samesite: process.env.NODE_ENV === 'production'?
-            'none' : 'strict',
-            maxAge: 7 * 24 * 60 * 60 * 1000,
-
-    });
+        res.cookie('token', token, cookieOptions);
 
     return res.json({success:true});
 
@@ -100,9 +98,8 @@ export const logout = async (req,res) => {
     try{
         res.clearCookie('token', {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            samesite: process.env.NODE_ENV === 'production'?
-            'none' : 'strict',
+            secure: isProduction,
+            sameSite: isProduction ? 'none' : 'lax',
         })
 
         return res.json({success: true, message: 'Logged Out'})
