@@ -1,6 +1,6 @@
 # Vehicle Detection & Tracking System — Full Stack Application
 
-A full-stack vehicle registration and tracking platform built using React (Vite), Node.js, Express, MongoDB, and JWT authentication. 
+A full-stack vehicle registration and tracking platform built using React (Vite), Node.js, Express, MongoDB, and JWT authentication and it is deployed through vercel here is the live link to it: ( https://vehicle-detection-6tmy.vercel.app/ )
 The system allows users to register accounts, verify email via OTP, register vehicles, and track vehicle movement and speed on an interactive map.
 
 This project demonstrates end-to-end full-stack development including authentication, secure APIs, database modeling, and frontend visualization.
