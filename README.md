@@ -48,11 +48,6 @@ Live demo: `https://vehicle-detection-6tmy.vercel.app/`
   - Auth middleware reads JWT from `req.cookies.token`
   - MongoDB models: `user` ↔ `vehicle` (user has a list of vehicle ObjectIds)
 
-### Prerequisites
-
-- Node.js (LTS recommended)
-- A MongoDB connection string (MongoDB Atlas is fine)
-- Gmail SMTP credentials (use a Gmail **App Password**)
 
 ### 1) Install dependencies
 
