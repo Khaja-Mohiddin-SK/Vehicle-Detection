@@ -11,7 +11,6 @@ Live demo: `https://vehicle-detection-6tmy.vercel.app/`
 - **Deployment-ready concerns**: CORS allowlist, cross-site cookie settings (`SameSite=None` + `Secure` in production), Vite base path support.
 
 ## Features
-
 - **Authentication**
   - Sign up / login
   - JWT session stored in **HTTP-only cookies**
@@ -39,7 +38,7 @@ Live demo: `https://vehicle-detection-6tmy.vercel.app/`
 - **Backend**: Node.js, Express, Mongoose, JWT (`jsonwebtoken`), bcrypt, cookie-parser, cors, dotenv, Nodemailer
 - **Database**: MongoDB (Mongoose models + references)
 
-## Architecture (high level)
+## Architecture
 
 - `user/` (React SPA)
   - Pages: `Home`, `Login`, `Emailverify`, `ResetPassword`, `Vehicle`, `VehicleMap`
