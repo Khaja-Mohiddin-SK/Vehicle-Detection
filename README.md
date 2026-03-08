@@ -61,7 +61,7 @@ cd ../user && npm install
 
 ### 2) Run the app
 
-From the repo root:
+From the repo root(Vehicle Detection):
 
 ```bash
 npm run dev
