@@ -1,91 +1,90 @@
-# Vehicle Detection & Tracking System — Full Stack Application
+# Vehicle Detection & Tracking System
 
-A full-stack vehicle registration and tracking platform built using React (Vite), Node.js, Express, MongoDB, and JWT authentication and it is deployed through vercel here is the live link to it: ( https://vehicle-detection-6tmy.vercel.app/ )
+Full-stack web application for **account + vehicle registration** and an **interactive vehicle tracking view** (simulated GPS path + speed) on a map.
+Built as a React (Vite) SPA with a Node/Express REST API, MongoDB persistence, and cookie-based JWT authentication.
 
-The system allows users to register accounts, verify email via OTP, register vehicles, and track vehicle movement and speed on an interactive map.
+Live demo: `https://vehicle-detection-6tmy.vercel.app/`
 
-This project demonstrates end-to-end full-stack development including authentication, secure APIs, database modeling, and frontend visualization.
+- **End-to-end product flow**: sign up/login, email OTP verification, password reset, vehicle registration, and a tracking UI.
+- **Security & backend fundamentals**: bcrypt password hashing, JWT auth in **HTTP-only cookies**, protected routes via middleware.
+- **Full-stack integration**: React Context global state, Axios calls with credentials, Express routes + MongoDB models and references.
+- **Deployment-ready concerns**: CORS allowlist, cross-site cookie settings (`SameSite=None` + `Secure` in production), Vite base path support.
+
+## Features
+
+- **Authentication**
+  - Sign up / login
+  - JWT session stored in **HTTP-only cookies**
+  - Logout
+- **Email verification (OTP)**
+  - Send verification OTP via Nodemailer (Gmail SMTP)
+  - Verify OTP with expiry handling
+- **Password reset (OTP)**
+  - Request reset OTP
+  - Reset password after OTP validation
+- **Vehicle module**
+  - Register a vehicle (per user)
+  - Check number plate existence (lookup API)
+- **Tracking UI**
+  - Map view using Leaflet / React-Leaflet
+  - **Simulated** GPS movement (random polyline updates)
+  - **Simulated** real-time speed readout
+- **UI**
+  - Tailwind-based layout + `react-toastify` notifications
+  - Optional 3D scene via Spline
+
+## Tech stack
+
+- **Frontend**: React 19, Vite, React Router, Tailwind CSS, Axios, React-Toastify, React-Leaflet/Leaflet, Spline
+- **Backend**: Node.js, Express, Mongoose, JWT (`jsonwebtoken`), bcrypt, cookie-parser, cors, dotenv, Nodemailer
+- **Database**: MongoDB (Mongoose models + references)
+
+## Architecture (high level)
+
+- `user/` (React SPA)
+  - Pages: `Home`, `Login`, `Emailverify`, `ResetPassword`, `Vehicle`, `VehicleMap`
+  - Global app state via `AppContext` (`VITE_BACKEND_URL`, auth state, user data, tracked plate)
+- `server/` (Express API)
+  - Routes under `/api/*`
+  - Auth middleware reads JWT from `req.cookies.token`
+  - MongoDB models: `user` ↔ `vehicle` (user has a list of vehicle ObjectIds)
+
+### Prerequisites
+
+- Node.js (LTS recommended)
+- A MongoDB connection string (MongoDB Atlas is fine)
+- Gmail SMTP credentials (use a Gmail **App Password**)
+
+### 1) Install dependencies
+
+Install dependencies in **all three** folders:
+
+```bash
+npm install
+cd server && npm install
+cd ../user && npm install
+```
+
+### 2) Run the app
+
+From the repo root:
+
+```bash
+npm run dev
+```
+
+This runs:
+- Frontend at `http://localhost:5173`
+- Backend at `http://localhost:4000` (default)
 
 
-# Key Features
+```text
+Vehicle Detection/
+  user/                 # React (Vite) frontend
+  server/               # Express + MongoDB backend
+  package.json          # Runs both with concurrently
+```
 
-✅ User Registration & Login  
-✅ JWT Authentication (HTTP-only cookies)  
-✅ Email OTP Verification (Nodemailer)  
-✅ Password Reset via OTP  
-✅ Vehicle Registration per User  
-✅ Number Plate Lookup API  
-✅ Vehicle Tracking Simulation  
-✅ Real-time Speed Simulation  
-✅ Interactive Map Tracking (Leaflet)  
-✅ Protected Routes with Middleware  
-✅ MongoDB Schema Relationships  
-✅ Spline 3D  
-
----
-
-# Technical Highlights
-
-- Secure password hashing using **bcrypt**
-- JWT token authentication with cookie storage
-- OTP generation & expiry handling
-- Email delivery using **Nodemailer + Gmail SMTP**
-- MongoDB relational referencing (User → Vehicles)
-- Express middleware authorization layer
-- React Context global auth state
-- Map path rendering using **React Leaflet**
-- Full frontend–backend API integration
-
----
-
-# How to run in Editor
-Open an integarted terminal for the main folder Vehicle Detection and run: (npm run dev) 
-
-Here it runs the frontend(user) and Backend(server) both.
-
- Note:   If you face an error of npm, check the note.
-       
-       -> Install Node.js (if not already installed).
-
-       -> Now run npm run dev in the termainal of main folder (Vehicle Detection).
-       
-       -> if you face an error of npm then check for node modules in each directory( main, frontend, backend folders) are installed or not.
-       
-       -> if not installed in termianl go to the directory in which node modules are not installed and type (npm install) in the terminal.
-       
-       -> Now after installing the node modules you can go to the main directory((Vehicle Detection) and type (npm run dev) in the terminal.
-       
-
----
-# THE Flow : 
-
-HOME PAGE ( CLICK VDS LOGO TO NAVIAGTE HOME PAGE FROM ANY PAGE )
-
-↓
-
-REGISTER  →  EMAIL OTP  →  VERIFY ACCOUNT
-
-↓
-
-LOGIN → FORGOT PASSWORD  →  ENTER EMAIL  →  ENTER OTP  →  RESET PASSWORD → LOGIN AGAIN
-
-↓
-
-REGISTER VEHICLE DETAILS
-
-↓
-
-TRACK VEHICLE
-
-↓
-
-SHOWS TRACKING WITH RANDOM LOCATONS, PATH AND SPEED.
-
-↓
-
-LOGOUT  →  GO TO HOME  →  PAGE HOVER AT THE LETTER ICON ON TOP RIGHT ICON ( THE LETTER ICON IS YOUR FIRST LETTER FROM YOUR NAME WHICH YOU ENTER )  →  CLICK LOGOUT
-
----
 
 # Tracking Module
 
