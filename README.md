@@ -71,13 +71,6 @@ This runs:
 - Backend at `http://localhost:4000` (default)
 
 
-```text
-Vehicle Detection/
-  user/                 # React (Vite) frontend
-  server/               # Express + MongoDB backend
-  package.json          # Runs both with concurrently
-```
-
 
 # Tracking Module
 
