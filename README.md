@@ -8,7 +8,6 @@ Live demo: `https://vehicle-detection-6tmy.vercel.app/`
 - **End-to-end product flow**: sign up/login, email OTP verification, password reset, vehicle registration, and a tracking UI.
 - **Security & backend fundamentals**: bcrypt password hashing, JWT auth in **HTTP-only cookies**, protected routes via middleware.
 - **Full-stack integration**: React Context global state, Axios calls with credentials, Express routes + MongoDB models and references.
-- **Deployment-ready concerns**: CORS allowlist, cross-site cookie settings (`SameSite=None` + `Secure` in production), Vite base path support.
 
 ## Features
 - **Authentication**
@@ -26,7 +25,7 @@ Live demo: `https://vehicle-detection-6tmy.vercel.app/`
   - Check number plate existence (lookup API)
 - **Tracking UI**
   - Map view using Leaflet / React-Leaflet
-  - **Simulated** GPS movement (random polyline updates)
+  - **Simulated** GPS movement (random paths)
   - **Simulated** real-time speed readout
 - **UI**
   - Tailwind-based layout + `react-toastify` notifications
@@ -34,9 +33,9 @@ Live demo: `https://vehicle-detection-6tmy.vercel.app/`
 
 ## Tech stack
 
-- **Frontend**: React 19, Vite, React Router, Tailwind CSS, Axios, React-Toastify, React-Leaflet/Leaflet, Spline
+- **Frontend**: React 19, React Router, Tailwind CSS, Axios, React-Toastify, React-Leaflet/Leaflet, Spline
 - **Backend**: Node.js, Express, Mongoose, JWT (`jsonwebtoken`), bcrypt, cookie-parser, cors, dotenv, Nodemailer
-- **Database**: MongoDB (Mongoose models + references)
+- **Database**: MongoDB
 
 ## Architecture
 
